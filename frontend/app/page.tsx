@@ -4,9 +4,16 @@ export default function Home() {
   return (
     <>
       <h1>hello</h1>
-      <Link href="/navbar">
-            Navbar
+      <Link href="/user_login">
+            user_login
       </Link>
+      <Link href="/cart">
+            cart
+      </Link>
+      <Link href="/profile">
+            profile
+      </Link>
+
     </>
   );
 }
