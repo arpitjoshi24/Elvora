@@ -56,7 +56,7 @@ export default function page() {
               />
             </div>
 
-            {/* Email */}
+         
             <div className="pt-2 pb-3 w-3/4">
               <label
                 htmlFor="Email"
@@ -74,7 +74,7 @@ export default function page() {
               />
             </div>
 
-            {/* Password */}
+           
             <div className="pt-2 pb-3 w-3/4">
               <label
                 htmlFor="Password1"
@@ -92,7 +92,6 @@ export default function page() {
               />
             </div>
 
-            {/* Confirm Password */}
             <div className="pt-2 pb-3 w-3/4">
               <label
                 htmlFor="Password2"
@@ -110,7 +109,7 @@ export default function page() {
               />
             </div>
 
-            {/* Register Button */}
+
             <div className="flex justify-center pt-4 pb-2 w-3/4">
               <button
                 type="submit"
