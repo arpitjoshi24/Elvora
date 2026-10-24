@@ -18,7 +18,7 @@ export default function page() {
         <div>
           <div className="flex justify-center">
             <img
-              src="./images/WhatsApp Image 2026-10-23 at 11.35.02 PM (1).jpeg"
+              src="./images/elvora_logo.jpeg"
               alt="Elvora logo"
               className="block h-20 w-20 object-contain"
             />
