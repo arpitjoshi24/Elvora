@@ -1,2 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 @import "tailwindcss";
 
+
+:root {
+  --font-krona: "Krona One", sans-serif;
+  --font-kulim: "Kulim Park", sans-serif;
+}
+
+body {
+  font-family: 'Kulim Park', sans-serif;
+}
+
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.kulim-park-extralight {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kulim-park-light {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kulim-park-regular {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kulim-park-semibold {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kulim-park-bold {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kulim-park-extralight-italic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kulim-park-light-italic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kulim-park-regular-italic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kulim-park-semibold-italic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kulim-park-bold-italic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
