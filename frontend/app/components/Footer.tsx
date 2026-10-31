@@ -1,15 +1,19 @@
+"use client";
 
-import React from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Footer() {
+  const [year, setYear] = useState(2026);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-[#241A14] text-[#F3EBD7]">
-
       <div className="mx-auto max-w-[1500px] px-6 py-14 md:px-10">
-
         <div className="grid grid-cols-1 gap-12 border-b border-[#6E5A4B] pb-12 sm:grid-cols-2 lg:grid-cols-4">
-
           {/* BRAND */}
           <div className="lg:col-span-1">
             <Link href="/landing" className="inline-flex items-center gap-2">
@@ -24,8 +28,8 @@ export default function Footer() {
             </Link>
 
             <p className="mt-5 max-w-[260px] font-kulim text-sm leading-7 text-[#C8BBA9]">
-              Thoughtfully selected styles for everyday living. Discover
-              pieces that feel as good as they look.
+              Thoughtfully selected styles for everyday living. Discover pieces
+              that feel as good as they look.
             </p>
           </div>
 
@@ -99,7 +103,7 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-kulim text-xs tracking-wide text-[#A99580]">
-            © {new Date().getFullYear()} ELVORA. ALL RIGHTS RESERVED.
+            © {year} ELVORA. ALL RIGHTS RESERVED.
           </p>
 
           <p className="font-kulim text-xs tracking-[2px] text-[#A99580]">
