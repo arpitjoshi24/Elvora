@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SearchIcon = () => (
   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
@@ -32,6 +33,7 @@ const UserIcon = () => (
 );
 
 export default function Header() {
+  const router = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQ, setSearchQ] = useState("");
   const [mobileNav, setMobileNav] = useState(false);
@@ -135,7 +137,8 @@ export default function Header() {
             onSubmit={(e) => {
               e.preventDefault();
               if (searchQ.trim()) {
-                window.location.href = `/product_page?q=${encodeURIComponent(searchQ.trim())}`;
+                router.push(`/product_page?q=${encodeURIComponent(searchQ.trim())}`);
+                setSearchOpen(false);
               }
             }}
             className="mx-auto flex max-w-[1500px] items-center gap-4"
