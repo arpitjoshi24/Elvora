@@ -13,7 +13,21 @@ export default function Home() {
       <Link href="/profile">
             profile
       </Link>
-
+      <Link href="/user_register">
+      user_register
+      </Link>
+      <Link href="/Admin_Order">
+      Admin_Order
+      </Link>
+      <Link href="/landing">
+      Landing
+      </Link>
+      <Link href="/profile">
+      Profile
+      </Link>
+      <Link href="/admin_login">
+      Admin Login
+      </Link>
     </>
   );
 }
