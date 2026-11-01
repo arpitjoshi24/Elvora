@@ -36,7 +36,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#F3EBD7] text-[#241A14]">
       {/* REUSABLE HEADER */}
-      <Header />
+      {/* <Header /> */}
 
       {/* PRODUCT SECTION */}
       <main className="mx-auto max-w-[1280px] px-5 py-7 sm:px-8 md:px-10 md:py-9">
@@ -360,7 +360,7 @@ export default function Page() {
       </main>
 
       {/* REUSABLE FOOTER */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
